@@ -1,0 +1,11 @@
+.title {
+    font-size: 30px;
+    color: #800115;
+    padding-top: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.conteinerCadastro {
+    padding-left: 30px;
+}
