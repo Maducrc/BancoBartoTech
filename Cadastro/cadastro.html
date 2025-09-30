@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+<div class="conteinerCadastro">
+    <div class="title">CADASTRAR-SE</div>
+    <div class="subtitulo">Cadastre-se para receber em tempo real as novidades do vestibulinho ETEC 2026</div>
+
+    <form>
+        <p></p>
+        Nome:
+        <input type="text" id="name" placeholder="Ex: Valentina Silva">
+        <p></p>
+        E-mail:
+        <input type="email" id="email" placeholder="Ex: exemplo@exemplo.com">
+        <p></p>
+        Telefone:
+        <input type="number" id="tel" placeholder="Ex: 55+ 11 12345-6789">
+        <p></p>
+        Tem Interesse na ETEC?
+        <label>
+        <input type="radio" name="interesse_etec" id="simetec" value="1">
+        Sim, tenho interesse em fazer Etec
+        <input type="radio" name="interesse_etec" id="naoetec" value="0">
+        Não, não tenho interesse em fazer Etec
+        </label>
+        <p></p>
+        Tem interesse no AMS?
+        <label>
+        <input type="radio" name="interesse_ams" id="simetec" value="1">
+        Sim, me interessei pelo AMS
+        <input type="radio" name="interesse_ams" id="naoetec" value="0">
+        Não, não me identifiquei
+        </label>
+        <p></p>
+        Gostaria de receber as notificações?
+        <label>
+        <input type="radio" name="notificaçoes" id="simetec" value="1">
+        Sim
+        <input type="radio" name="notificaçoes" id="naoetec" value="0">
+        Não
+        </label>
+        <p></p>
+        Senha:
+        <input type="password" name="senhaUser" min="8" max="10">
+
+        <p><button type="submit">Cadastrar</button></p>
+</div>
+    </form>
+</body>
+</html>
