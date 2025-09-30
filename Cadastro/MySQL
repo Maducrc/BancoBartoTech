@@ -1,0 +1,16 @@
+create database incentivams;
+use incentivams;
+
+create table cadastro_aluno (
+id int not null auto_increment primary key,
+nome varchar (100)not null,
+email varchar (100) unique not null,
+telefone varchar (13) unique not null,
+interesse_etec tinyint default 1 not null,
+interesse_ams tinyint default 0 not null,
+receber_notificaçoes tinyint default 1 not null,
+senha varchar (10) not null,
+data_cadastro timestamp default current_timestamp
+);
+
+select*from cadastro_aluno;
