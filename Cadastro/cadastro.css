@@ -1,11 +1,89 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:#fcebeb;;
+}
+
+/*Conteiner de tudo*/
+.conteinerCadastro {
+    padding-left: 30px;
+    padding-right: 30px;
+    border: 1px solid #fcebeb;
+    border-radius: 15px;
+    width: 40%;
+    box-shadow: 0 8px 20px #ffbec8;
+    background-color: white;
+}
+
 .title {
-    font-size: 30px;
+    font-size: 25px;
     color: #800115;
     padding-top: 30px;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.conteinerCadastro {
-    padding-left: 30px;
+.divider {
+    background-color: #800115;
+    height: 1px;
+    border: none;
+    width: 10;
 }
+
+input[type=text], input[type=email], input[type=number], input[type=password] {
+   width: 300px;
+   height: 40px;
+   border-radius: 15px;
+   border: 1px solid #800115;
+   margin-bottom: 5px;
+   margin-top: 5px;
+   padding-left: 30px; 
+   box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #800115;
+    opacity: 0.3;
+}
+
+input[type=radio] {
+    color: #800115;
+}
+
+button {
+    width: 350px;
+    height: 30px;
+    border: 1px solid #800115;
+    border-radius: 15px;
+    background-color: #800115;
+    color: white;
+}
+
+/*Posição dos ícones*/
+.icons {
+    position: relative;
+    width: 300px; 
+    margin-bottom: 15px;
+}
+
+/*Estilo dos ícones*/
+.icons i {
+    position: absolute;
+    top: 50%; 
+    left: 12px;
+    transform: translateY(-50%);
+    color: #800115;
+    font-size: 16px; 
+    pointer-events: none; 
+}
+
+.questions {
+    font-weight: bold;
+    color: #800115;
+}
+
+
