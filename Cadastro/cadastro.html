@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="cadastro.css">
 </head>
-<body>
 
 <div class="conteinerCadastro">
 
@@ -15,72 +14,47 @@
     <div class="subtitulo">Cadastre-se para receber em tempo real as novidades do vestibulinho ETEC 2026</div>
     <hr class="divider">
     
-    <form>
+    <form method="post" action="cadastroDados.php" enctype="multipart/form-data">
         <p></p>
-        
+    
+    <div class="formContainer">
         <!--Campos de entrada-->
         <div class="icons">
         <i class="fa-solid fa-user"></i>
-        <input type="text" id="name" placeholder=" Nome Completo"></input>
+        <input type="text" id="nome" name="name" placeholder=" Nome Completo"></input>
         </div>
 
         <p></p>
 
         <div class="icons">
         <i class="fa-solid fa-envelope"></i>
-        <input type="email" id="email" placeholder=" E-mail">
+        <input type="email" id="email" name="email" placeholder=" E-mail">
         </div>
 
         <p></p>
 
         <div class="icons">
         <i class="fa-solid fa-phone"></i>
-        <input type="number" id="tel" placeholder=" Telefone">
+        <input type="number" id="tel" name="tel" placeholder=" Telefone">
         </div>
 
         <p></p>
 
         <div class="icons">
         <i class="fa-solid fa-lock"></i>
-        <input type="password" name="senhaUser" placeholder=" Senha" min="8" max="10">
+        <input type="password" id="senha" name="senhaUser" placeholder=" Senha" min="8" max="10">
         </div>
 
         <p></p>
         
-        <!--Interesses-->
-        <div class="questions">Tem Interesse na ETEC?</div>
-        <label>
-        <input type="radio" name="interesse_etec" id="simetec" value="1">
-        Sim, tenho interesse em fazer Etec. <br>
-        <input type="radio" name="interesse_etec" id="naoetec" value="0">
-        Não, não tenho interesse em fazer Etec.
-        </label>
-
-        <p></p>
-
-        <div class="questions">Tem interesse no AMS?</div>
-        <label>
-        <input type="radio" name="interesse_ams" id="simetec" value="1">
-        Sim, me interessei pelo AMS. <br>
-        <input type="radio" name="interesse_ams" id="naoetec" value="0">
-        Não, não me identifiquei.
-        </label>
-
-        <p></p>
-
-        <div class="questions">Gostaria de receber as notificações?</div>
-        <label>
-        <input type="radio" name="notificaçoes" id="simetec" value="1">
-        Sim <br>
-        <input type="radio" name="notificaçoes" id="naoetec" value="0">
-        Não
-        </label>
-
-        <p></p>
-        
         <!--Submit-->
-        <p><button type="submit">Cadastrar</button></p>
+        <p><button type="submit" id="cadastrar">Cadastrar</button></p><br>
+        <button type="reset" id="limpar" onclick="limparCampos()">Limpar Campos</button>
+
+    </div>
     </form>
 </div>
+
+<script src="limparCampos.js"></script>
 </body>
 </html>
