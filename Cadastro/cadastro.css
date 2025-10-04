@@ -19,6 +19,16 @@ body {
     background-color: white;
 }
 
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+
 .title {
     font-size: 25px;
     color: #800115;
@@ -39,8 +49,6 @@ input[type=text], input[type=email], input[type=number], input[type=password] {
    height: 40px;
    border-radius: 15px;
    border: 1px solid #800115;
-   margin-bottom: 5px;
-   margin-top: 5px;
    padding-left: 30px; 
    box-sizing: border-box;
 }
@@ -61,13 +69,14 @@ button {
     border-radius: 15px;
     background-color: #800115;
     color: white;
+    margin-top: -30px;
+    cursor:pointer;
 }
 
 /*Posição dos ícones*/
 .icons {
     position: relative;
     width: 300px; 
-    margin-bottom: 15px;
 }
 
 /*Estilo dos ícones*/
@@ -81,9 +90,9 @@ button {
     pointer-events: none; 
 }
 
-.questions {
+/*.questions {
     font-weight: bold;
     color: #800115;
-}
+}*/
 
 
