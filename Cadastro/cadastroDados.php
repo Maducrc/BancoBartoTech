@@ -5,6 +5,7 @@ $nome = $_POST['name'];
 $email = $_POST['email'];
 $telefone = $_POST['tel'];
 $senha = $_POST['senhaUser'];
+$senhaCript=password_hash($senha,PASSWORD_DEFAULT);
 
 if (($nome == "") || ($email == "") || ($telefone == "") || ($senha == "")) {
     echo "<script>alert('Preencha todos os campos para realizar o cadastro!!'); history.go(-1);</script>";
@@ -17,7 +18,7 @@ else {
             ':nome' => $nome,
             ':email' => $email,
             ':telefone' => $telefone,
-            ':senha' => $senha
+            ':senha' => $senhaCript
         ));
         
         if ($cadastro_aluno -> rowCount()==1) {
