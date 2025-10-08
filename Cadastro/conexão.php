@@ -2,7 +2,7 @@
 $servidor = 'localhost';
 $bd = 'incentivams';
 $user = 'root';
-$senha = '24036M@aria';
+$senha = '';
 
 try {
     $verify = new PDO('mysql:host=' .$servidor. ';dbname=' . $bd, $user, $senha);
@@ -11,4 +11,4 @@ try {
 catch (PDOException $erro) {
     echo 'Houve um erro na conexão: ' .$erro->getMessage();
 }
-
+?>
