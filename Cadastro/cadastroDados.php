@@ -1,5 +1,5 @@
 <?php 
-include 'conexao.php';
+include 'conexão.php';
 
 $nome = $_POST['name'];
 $email = $_POST['email'];
